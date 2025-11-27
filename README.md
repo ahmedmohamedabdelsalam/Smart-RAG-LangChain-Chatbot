@@ -1,15 +1,18 @@
 # Smart-RAG-LangChain-Chatbot
 
-<div align="center">
-  <img src="data/docs/RAG_architecture.png" >
-  <figcaption>RAG architecture with LangChain components.</figcaption>
-</div>
-
 ## Project Overview
 
 Large Language Models (LLMs) are powerful but may generate outdated or incorrect information as they are trained on static data. This project implements a Retrieval-Augmented Generation (RAG) chatbot using LangChain, powered by OpenAI, Google Generative AI, and Hugging Face APIs. Users can upload documents in txt, pdf, CSV, or docx formats and interact with the data. Relevant documents are retrieved and sent to the LLM along with user queries for accurate responses.
 
 The system includes components from document loading to conversational retrieval chain and provides a user interface using a Streamlit application.
+
+## Features
+
+- Multi-source document support (txt, pdf, CSV, docx)
+- Real-time interactive chatbot using RAG
+- Integration with OpenAI, Google Generative AI, and Hugging Face APIs
+- Semantic search and vector database (Chroma) for accurate answers
+- User-friendly interface with Streamlit
 
 ## Installation
 
@@ -31,8 +34,9 @@ Full dependencies are listed in `requirements.txt`.
 
 ## Notes
 
-- Users can use their own documents for chat interactions.
+- Users can add their own documents for chat interactions.
 - The project is designed for educational and portfolio purposes.
+- No sample data is required to run the chatbot; the `data/` folder can remain empty.
 
 ## Author
 
